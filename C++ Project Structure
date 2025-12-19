@@ -1,0 +1,7 @@
+bash
+mkdir include src tests
+touch CMakeLists.txt
+touch src/main.cpp
+touch src/database.cpp src/student.cpp src/student_repository.cpp
+touch include/database.hpp include/student.hpp include/student_repository.hpp
+touch tests/test_database_connection.cpp
