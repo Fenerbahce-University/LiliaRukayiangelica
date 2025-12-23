@@ -22,9 +22,9 @@ The first week of the System Programming Project focused on team formation, envi
 * Invited all team members to the repository.
 * Implemented a structured branching strategy:
 
-  * `main` – stable production-ready code
-  * `develop` – active development branch
-  * `feature/*` – individual feature development branches
+  * main – stable production-ready code
+  * develop – active development branch
+  * feature – individual feature development branches
 * Enforced pull request reviews to maintain code quality.
 
 
@@ -39,7 +39,7 @@ Each developer prepared their environment by installing the following tools:
 * Git
 * PostgreSQL and related libraries
 
-This standardization helps reduce compatibility issues across different systems.
+
 
 
 
