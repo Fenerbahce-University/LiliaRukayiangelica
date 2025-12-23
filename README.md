@@ -106,3 +106,21 @@ Each developer prepared their environment by installing the following tools:
 * Created a roadmap outlining upcoming development phases.
 
 
+
+## Week 2 Progress
+
+* Focused on Docker container creation
+* PostgreSQL container configured
+* C++ application container created
+* docker-compose.yml configured to run all services
+* Containers successfully started using Docker Compose
+* Inter-container network communication verified
+
+**Next Steps (Week 3):**
+
+* Implement database connection in C++
+* Develop CRUD operations for the Student Information System
+
+
+
+
