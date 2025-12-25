@@ -1,26 +1,24 @@
 version: "3.8"
 
 services:
-  db:
-    image: rokaia011/sis-project-postgres:latest
+  database:
+    image: rokaia011/liliarukayiangelica-postgres
     environment:
-      POSTGRES_DB: studentdb
-      POSTGRES_USER: studentuser
-      POSTGRES_PASSWORD: studentpass
+      POSTGRES_DB: projectdb
+      POSTGRES_USER: projectuser
+      POSTGRES_PASSWORD: projectpass
     volumes:
-      - pgdata:/var/lib/postgresql/data
+      - db_data:/var/lib/postgresql/data
     networks:
-      - sis-network
-
+      - project-network
   app:
-    image: rokaia011/sis-project-app:latest
+    image: rokaia011/lilia-rukayiangelice-app
     depends_on:
-      - db
+      - database
     networks:
-      - sis-network
-
+      - project-network
 volumes:
-  pgdata:
+  db_data:
 
 networks:
-  sis-network:
+  project-network:
