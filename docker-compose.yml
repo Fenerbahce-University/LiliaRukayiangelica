@@ -12,7 +12,7 @@ services:
     networks:
       - project-network
   app:
-    image: rokaia011/lilia-rukayiangelice-app
+    image: rokaia011/liliarukayiangelica-app
     depends_on:
       - database
     networks:
