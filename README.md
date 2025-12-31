@@ -121,6 +121,34 @@ Each developer prepared their environment by installing the following tools:
 * Implement database connection in C++
 * Develop CRUD operations for the Student Information System
 
+## Week 3 Progress
+
+* Focused on C++ application development and database integration
+* Database connection implemented in C++ using libpqxx
+* PostgreSQL connection successfully established from the application container
+* Core CRUD operations implemented for the Student Information System
+* Create student records
+* Read/list student records
+* Update student information
+* Delete student records
+* Error handling added for database and runtime exceptions
+* Basic logging implemented for application events and errors
+* Unit tests written for database connection and CRUD functionality
+* Test results committed to the GitHub repository
+* C++ application Docker image updated and pushed to Docker Hub
+
+## Next Steps (Week 4):
+
+Perform integrated system testing using Docker Compose
+
+Conduct performance and stability testing
+
+Finalize project documentation (README, INSTALL, MANUAL)
+
+Tag and push final Docker images
+
+Prepare presentation slides and demo
+
 
 
 
