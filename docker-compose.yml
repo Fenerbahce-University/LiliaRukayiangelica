@@ -1,0 +1,17 @@
+services:
+  db:
+    image: rokaia011/liliarukayiangelica-postgres:latest
+    environment:
+      POSTGRES_DB: projectdb
+      POSTGRES_USER: student
+      POSTGRES_PASSWORD: studentpass
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  app:
+    image: rokaia011/liliarukayiangelica-app:latest
+    depends_on:
+      - db
+
+volumes:
+  db_data:
