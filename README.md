@@ -1,154 +1,38 @@
+# System Programming Term Project
 
+## Project Overview
+This project demonstrates a containerized system programming application using Docker, Docker Compose, and GitHub Actions CI.
 
-# Week 1 – Project Setup & Planning
+## Architecture
+- C++ Application container
+- PostgreSQL Database container
+- Docker Compose for orchestration
+- GitHub Actions for CI pipeline
 
-## Overview
+## How to Run the Project
+1. Clone the repository
+2. Navigate to the project root
+3. Run:
+   docker compose up -d
+4. To stop:
+   docker compose down
 
-The first week of the System Programming Project focused on team formation, environment setup, repository organization, and initial planning for development, Docker, and continuous integration. The goal was to establish a solid and standardized foundation for the rest of the project.
+## Environment Variables
+The database container uses the following variables:
+- POSTGRES_DB
+- POSTGRES_USER
+- POSTGRES_PASSWORD
 
+## Docker Images
+- Application image: rokaia011/liliarukayiangelica-app
+- Database image: rokaia011/liliarukayiangelica-postgres
 
+## CI Pipeline
+A GitHub Actions CI workflow is configured to automatically build Docker images on every push and pull request.
 
-## Team Organization
+## Branching Strategy
+All development is done on feature branches. Final pull requests will be created at the end of the project.
 
-* Created the project team and defined clear roles for each member.
-* Established collaboration rules to ensure code quality and accountability.
-* All contributions are reviewed through pull requests before merging.
-
-
-
-## Repository Setup
-
-* Created a GitHub repository using the official university email.
-* Invited all team members to the repository.
-* Implemented a structured branching strategy:
-
-  * main – stable production-ready code
-  * develop – active development branch
-  * feature – individual feature development branches
-* Enforced pull request reviews to maintain code quality.
-
-
-
-## Development Environment
-
-Each developer prepared their environment by installing the following tools:
-
-* C++ compiler and required libraries
-* CMake
-* Docker
-* Git
-* PostgreSQL and related libraries
-
-
-
-
-
-## Project Management
-
-* Created a GitHub Project Board for task tracking.
-* Used GitHub Issues for:
-
-  * Planning and research
-  * Technical discussions
-  * Environment setup tasks
-  * Documentation tracking
-* Issues are used to maintain clear communication and a documented history of decisions.
-
-
-## Individual Contributions
-
-### Project Manager
-
-* Organized the repository structure.
-* Managed project documentation.
-* Coordinated tasks among team members.
-* Ensured workflow consistency and progress tracking.
-
-
-
-### Docker / DevOps Engineer
-
-* Created a Docker Hub account using an official educational email.
-* Researched Docker requirements for the project.
-* Planned PostgreSQL container usage.
-* Researched continuous integration tools and workflows.
-
-
-
-### Docker & CI Planning
-
-* Developed a Docker requirements document describing:
-
-  * PostgreSQL database container
-  * C++ application container
-  * Networking, volumes, environment variables, logging, and data persistence
-* Planned a continuous integration pipeline including:
-
-  * Build steps for the C++ application
-  * Basic testing stages
-  * Execution timing
-* Added a placeholder for future GitHub Actions workflows.
-* All documentation was submitted via feature branches and merged through pull requests.
-* Related GitHub issues were created and tracked.
-
-
-
-### C++ Development Planning
-
-* Designed the C++ application structure.
-* Defined folder organization:
-
-  * Header files
-  * Source files
-  * Test files
-* Built a basic Make configuration for compilation and linking.
-* Documented how the C++ application will interact with the PostgreSQL database.
-* Created a roadmap outlining upcoming development phases.
-
-
-
-## Week 2 Progress
-
-* Focused on Docker container creation
-* PostgreSQL container configured
-* C++ application container created
-* docker-compose.yml configured to run all services
-* Containers successfully started using Docker Compose
-* Inter-container network communication verified
-
-**Next Steps (Week 3):**
-
-* Implement database connection in C++
-* Develop CRUD operations for the Student Information System
-
-
-
-
-
-##Week 4 – Finalization & Project Completion
-
-#Overview  
-The final week focused on polishing, validation, and preparing the project for final submission. No new features were added. The goal was to ensure stability, documentation completeness, and compliance with course requirements.
-
-#Docker Compose Finalization  
-Reviewed and cleaned the docker-compose configuration.
-Verified usage of volumes, networks, and environment variables.
-Confirmed all containers start and stop correctly using Docker Compose.
-
-#Continuous Integration Validation  
-Verified that the GitHub Actions CI pipeline runs successfully.
-Confirmed Docker images for the application and database build correctly in CI.
-Ensured the pipeline triggers on pushes to feature branches.
-
-#Documentation Completion  
-Updated project documentation to reflect the final architecture.
-Documented how to run the project using Docker Compose.
-Included details about Docker images and CI workflow behavior.
-
-#Branching & Pull Request Strategy  
-All development work was completed on feature branches.
-The main branch remains untouched during development.
-Pull requests will be created at the end of the project as instructed.
 
 #Final Status  
 All weekly milestones have been completed successfully.
