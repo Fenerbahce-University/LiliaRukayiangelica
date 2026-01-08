@@ -137,17 +137,47 @@ Each developer prepared their environment by installing the following tools:
 * Test results committed to the GitHub repository
 * C++ application Docker image updated and pushed to Docker Hub
 
-## Next Steps (Week 4):
+## **Week 4 Project Report: Testing, Documentation, and Presentation**
 
-Perform integrated system testing using Docker Compose
+### **Week 4 Overview**
 
-Conduct performance and stability testing
+Week 4 marked the final and most critical phase of the project, focusing on system validation, documentation completion, and preparation for project delivery. As the Project Manager, the primary objective during this week was to ensure that all system components were fully integrated, tested, documented, and ready for final presentation and deployment.
 
-Finalize project documentation (README, INSTALL, MANUAL)
+### **Technical Progress and Achievements**
 
-Tag and push final Docker images
+During this week, the team successfully conducted **integrated system testing** using Docker Compose. All services, including the C++ application, database, and supporting components, were deployed together in a unified containerized environment. This allowed the team to verify correct inter-container communication, service dependencies, and overall system stability.
 
-Prepare presentation slides and demo
+In addition to functional testing, **performance and stability testing** were carried out to evaluate system behavior under normal operating conditions. The system demonstrated reliable performance, with no critical failures observed during testing. Minor issues identified during this phase were promptly resolved.
+
+The project was then **fully deployed using Docker Compose**, confirming that the application can be launched consistently across environments. Final Docker images were built, properly tagged, and pushed to **Docker Hub**, ensuring version consistency and readiness for distribution.
+
+### **Documentation Completion**
+
+A major focus of Week 4 was the completion and refinement of project documentation. The following documents were finalized to ensure clarity, usability, and maintainability:
+
+* **README.md**: Provides a comprehensive overview of the project, system architecture, and usage instructions.
+* **INSTALL.md**: Contains detailed installation and setup steps for deploying the system using Docker Compose.
+* **MANUAL.md**: Serves as a user guide explaining how to operate and interact with the system.
+* **CONTRIBUTING.md**: Defines contribution guidelines, coding standards, and collaboration rules for future development.
+
+All documentation was reviewed for accuracy and completeness and uploaded to the GitHub repository.
+
+### **GitHub Activity and Repository Management**
+
+The team met all **GitHub activity expectations** for Week 4. Each team member made at least three meaningful commits. Final Pull Requests were reviewed and merged following established review guidelines. The GitHub Wiki was completed with weekly reports, meeting notes, and a decision log.
+
+A **release tag** was created to mark the final version of the project, ensuring traceability and version control. The GitHub repository structure reflects a clean and well-organized final state.
+
+### **Presentation and Demonstration Preparation**
+
+In preparation for project submission and evaluation, **presentation slides** were created to clearly explain the project objectives, architecture, technologies used, and achieved outcomes. A live **project demonstration** was prepared, showcasing the system running successfully in a Dockerized environment.
+
+### **Project Management Summary**
+
+From a project management perspective, Week 4 successfully concluded all planned objectives. The project was delivered on time, met all technical and documentation requirements, and demonstrated effective teamwork and coordination. The structured workflow, consistent communication, and adherence to best practices contributed significantly to the successful completion of the project.
+
+
+
 
 
 
