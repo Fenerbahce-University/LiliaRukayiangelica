@@ -124,3 +124,34 @@ Each developer prepared their environment by installing the following tools:
 
 
 
+
+##Week 4 – Finalization & Project Completion
+
+#Overview  
+The final week focused on polishing, validation, and preparing the project for final submission. No new features were added. The goal was to ensure stability, documentation completeness, and compliance with course requirements.
+
+#Docker Compose Finalization  
+Reviewed and cleaned the docker-compose configuration.
+Verified usage of volumes, networks, and environment variables.
+Confirmed all containers start and stop correctly using Docker Compose.
+
+#Continuous Integration Validation  
+Verified that the GitHub Actions CI pipeline runs successfully.
+Confirmed Docker images for the application and database build correctly in CI.
+Ensured the pipeline triggers on pushes to feature branches.
+
+#Documentation Completion  
+Updated project documentation to reflect the final architecture.
+Documented how to run the project using Docker Compose.
+Included details about Docker images and CI workflow behavior.
+
+#Branching & Pull Request Strategy  
+All development work was completed on feature branches.
+The main branch remains untouched during development.
+Pull requests will be created at the end of the project as instructed.
+
+#Final Status  
+All weekly milestones have been completed successfully.
+The project is stable, reproducible, and ready for final evaluation.
+
+
