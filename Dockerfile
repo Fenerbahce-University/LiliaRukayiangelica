@@ -8,4 +8,4 @@ WORKDIR /app
 
 COPY . .
 
-CMD ["./app"]
+CMD ["bash"]

@@ -1,19 +1,19 @@
 services:
-  app:
-    image: rokaia011/liliarukayiangelica-app
-    depends_on:
-      - database
-    networks:
-      - project-network
-
   database:
     image: rokaia011/liliarukayiangelica-postgres
     environment:
       POSTGRES_DB: projectdb
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: projectuser
+      POSTGRES_PASSWORD: projectpass
     volumes:
       - db_data:/var/lib/postgresql/data
+    networks:
+      - project-network
+
+  app:
+    image: rokaia011/liliarukayiangelica-app
+    depends_on:
+      - database
     networks:
       - project-network
 
@@ -22,4 +22,3 @@ volumes:
 
 networks:
   project-network:
-
