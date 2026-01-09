@@ -1,0 +1,7 @@
+FROM postgres:15-alpine
+
+ENV POSTGRES_DB=projectdb
+ENV POSTGRES_USER=projectuser
+ENV POSTGRES_PASSWORD=projectpass
+
+EXPOSE 5432

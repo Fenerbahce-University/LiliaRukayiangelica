@@ -1,0 +1,39 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+      - Feature-Branch
+  pull_request:
+
+jobs:
+  docker-build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Login to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Build app image
+        run: |
+          docker build -t rokaia011/liliarukayiangelica-app:latest .
+
+      - name: Build database image
+        run: |
+          docker build -f Dockerfile.db -t rokaia011/liliarukayiangelica-postgres:latest .
+
+      - name: Validate docker-compose
+        run: docker compose config
+
+

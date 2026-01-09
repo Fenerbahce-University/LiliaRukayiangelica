@@ -1,0 +1,49 @@
+services:
+  app:
+    image: rokaia011/liliarukayiangelica-app
+    depends_on:
+      database:
+        condition: service_healthy
+    networks:
+      - project-network
+    restart: always
+    deploy:
+      resources:
+        limits:
+          cpus: "0.50"
+          memory: 512M
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  database:
+    image: rokaia011/liliarukayiangelica-postgres
+    environment:
+      POSTGRES_DB: projectdb
+      POSTGRES_USER: projectuser
+      POSTGRES_PASSWORD: projectpass
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    networks:
+      - project-network
+    restart: always
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+volumes:
+  db_data:
+
+networks:
+  project-network:
+    driver: bridge
+
