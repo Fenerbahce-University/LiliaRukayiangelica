@@ -65,7 +65,7 @@ Added:
 To start the full system:
 docker compose up -d
 
-### 3. Docker Hub Integration (Mandatory)
+### 3. Docker Hub Integration
 
 Docker Hub account was created using a school email.
 Public images pushed to Docker Hub:
