@@ -1,5 +1,10 @@
 .git
-.github
-docs
+.gitignore
 build
 *.o
+*.out
+node_modules
+.vscode
+.idea
+.env
+
