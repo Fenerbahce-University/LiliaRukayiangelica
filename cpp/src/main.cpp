@@ -1,6 +1,9 @@
 #include <iostream>
+#include "db.h"
 
 int main() {
-    std::cout << "C++ application is running" << std::endl;
+    updateStudent(1, "Angelica");
+    deleteStudent(2);
+
     return 0;
 }
