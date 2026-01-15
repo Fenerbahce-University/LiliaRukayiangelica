@@ -3,7 +3,10 @@
 
 #include <string>
 
-void updateStudent(int id, const std::string& name);
-void deleteStudent(int id);
+// Update a student's name using ID
+bool updateStudent(int id, const std::string& name);
+
+// Delete a student using ID
+bool deleteStudent(int id);
 
 #endif

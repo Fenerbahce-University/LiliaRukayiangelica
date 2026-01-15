@@ -2,15 +2,14 @@
 #include "../include/db.h"
 
 int main() {
-    std::cout << "Running database tests..." << std::endl;
+    std::cout << "Running integration tests..." << std::endl;
 
-    // Test update function
-    updateStudent(1, "Test Student");
+    updateStudent(1, "Test Name");
+    updateStudent(-1, "");   // Invalid input test
 
-    // Test delete function
     deleteStudent(3);
+    deleteStudent(-5);       // Invalid input test
 
-    std::cout << "Tests executed successfully." << std::endl;
-
+    std::cout << "Tests completed." << std::endl;
     return 0;
 }
